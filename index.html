@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>fcrh.me</title>
+  </head>
+  <body>
+    {% for post in site.posts %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    {% endfor %}
+  </body>
+</html>
