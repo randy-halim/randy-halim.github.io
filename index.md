@@ -1,9 +1,3 @@
----
-layout: home
----
-
-# fcrh.me
-
 welcome! we got many things, like
 
 - blog posts

@@ -7,7 +7,7 @@
 
     <link
       rel="stylesheet"
-      href="{{ '/assets/css/home.scss' | relative_url }}"
+      href="{{ '/assets/css/index.scss' | relative_url }}"
     />
   </head>
   <body>
@@ -15,6 +15,12 @@
       <div class="sidebar">
         <h1>{{ site.title }}</h1>
         <p>just vibe here</p>
+        <hr />
+        <nav>
+          {% for item in site.data.menu.main %}
+          <a href="{{ item.url }}">{{ item.name }}</a>
+          {% endfor %}
+        </nav>
       </div>
       <div class="content">{{ content }}</div>
     </div>
