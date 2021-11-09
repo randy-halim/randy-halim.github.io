@@ -20,22 +20,30 @@ h6 {
   font-family: "Syne Mono", monospace;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background: $Sea-Foam-3;
+  background-image: linear-gradient(left, $Sea-Foam-5, $Sea-Foam-4, $Sea-Foam-5);
+}
+
 body {
   font-family: "Crimson Text", serif;
   font-size: 14px;
-  background-color: $Sea-Foam-3;
+  background-color: $Sea-Foam-4;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+  grid-column-gap: 1em;
 
   ul {
     list-style-type: none;
   }
 
   .footer {
-    background-color: $Sea-Foam-2;
+    background-color: $Sea-Foam-3;
   }
 }
