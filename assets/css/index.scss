@@ -23,8 +23,7 @@ h6 {
 hr {
   border: 0;
   height: 1px;
-  background: linear-gradient(left, $Sea-Foam-5, $Sea-Foam-4, $Sea-Foam-5);
-  background-image: linear-gradient(left, $Sea-Foam-5, $Sea-Foam-4, $Sea-Foam-5);
+  background: $Sea-Foam-5
 }
 
 body {
@@ -34,18 +33,26 @@ body {
   color: #FFFFFF;
 }
 
+a, a:visited {
+  color: $Sea-Foam-1;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   grid-column-gap: 1em;
+}
 
+.sidebar {
   ul {
     list-style-type: none;
   }
 
   .footer {
-    background-color: $Sea-Foam-3;
-    color: #3B3B3B
+    background-color: $Sea-Foam-5;
+    color: #3B3B3B;
+    border-radius: 5px;
+    padding: 1em;
   }
 }
