@@ -2,7 +2,7 @@ welcome! we got many things, like
 
 - blog posts
 - projects
-- files for classes (iykyk)
+- material for classes (iykyk)
 - `the v o i d`
 - and more!
 
@@ -19,5 +19,7 @@ ps. this site is currently a big work in progress. things should be looking bett
 ## [{{ post.date | date: "%m/%d/%Y" }} — {{ post.title }}]({{ post.url | relative_url }})
 
 {{ post.excerpt }}
+
+-----
 
 {% endfor %}
