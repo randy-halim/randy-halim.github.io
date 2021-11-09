@@ -16,7 +16,7 @@ ps. this site is currently a big work in progress. things should be looking bett
 
 {% for post in site.posts %}
 
-## [{{ page.date | date: "%m/%d/%Y" }} — {{ post.title }}]({{ post.url | relative_url }})
+## [{{ post.date | date: "%m/%d/%Y" }} — {{ post.title }}]({{ post.url | relative_url }})
 
 {{ post.excerpt }}
 
