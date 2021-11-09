@@ -8,7 +8,7 @@ welcome! we got many things, like
 
 so don't be shy and stay a while!
 
-\— randy✨
+— randy✨
 
 ps. this site is currently a big work in progress. things should be looking better soon ✨
 
@@ -16,8 +16,8 @@ ps. this site is currently a big work in progress. things should be looking bett
 
 {% for post in site.posts %}
 
-## [{{ post.title }}]({{ post.url | relative_url }})
+## [{{ post.date }} — {{ post.title }}]({{ post.url | relative_url }})
 
-{{ post.summary }}
+{{ post.excerpt }}
 
 {% endfor %}
