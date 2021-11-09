@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@use "colors";
 
 h1,
 h2,
@@ -13,10 +14,19 @@ h6 {
 body {
   font-family: "Crimson Text", serif;
   font-size: 14px;
+  background-color: $Sea-Foam-3;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+
+  ul {
+    list-style-type: none;
+  }
+
+  .footer {
+    background-color: $Sea-Foam-2;
+  }
 }

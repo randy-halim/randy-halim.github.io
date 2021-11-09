@@ -17,10 +17,16 @@
         <p>just vibe here</p>
         <hr />
         <nav>
-          {% for item in site.data.menu.main %}
-          <a href="{{ item.url }}">{{ item.name }}</a>
-          {% endfor %}
+          <ul>
+            {% for item in site.data.menu.main %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+            {% endfor %}
+          </ul>
         </nav>
+        <div class="footer">
+          <p>fonts are <a href="https://fonts.google.com/specimen/Crimson+Text">Crimson Text</a> with a splash of <a href="https://fonts.google.com/specimen/Syne+Mono">Syne Mono</a></p>
+          <p><a href="https://fcrh.mit-license.org/">MIT License</a> - see source at <a href="https://github.com/randy-halim/randy-halim.github.io">randy-halim/randy-halim.github.io</a></p>
+        </div>
       </div>
       <div class="content">{{ content }}</div>
     </div>
