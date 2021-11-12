@@ -5,11 +5,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
 
 /* Color Theme Swatches in Hex */
-$Sea-Foam-1: #00BA9E;
-$Sea-Foam-2: #007A68;
-$Sea-Foam-3: #00FAD4;
-$Sea-Foam-4: #003B32;
-$Sea-Foam-5: #00E0BF;
+$Sea-Foam-1: #00ba9e;
+$Sea-Foam-2: #007a68;
+$Sea-Foam-3: #00fad4;
+$Sea-Foam-4: #003b32;
+$Sea-Foam-5: #00e0bf;
 
 h1,
 h2,
@@ -23,17 +23,18 @@ h6 {
 hr {
   border: 0;
   height: 1px;
-  background: $Sea-Foam-5
+  background: $Sea-Foam-5;
 }
 
 body {
   font-family: "Crimson Text", serif;
   font-size: 18px;
   background-color: $Sea-Foam-4;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: $Sea-Foam-1;
 }
 
@@ -43,7 +44,7 @@ a, a:visited {
   grid-template-rows: 1fr;
   grid-column-gap: 3em;
 
-  @media screen and (max-width: 800) {
+  @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr;
     grid-row-gap: 3em;
@@ -57,7 +58,7 @@ a, a:visited {
 
   .footer {
     background-color: $Sea-Foam-5;
-    color: #3B3B3B;
+    color: #3b3b3b;
     border-radius: 5px;
     padding: 1em;
   }

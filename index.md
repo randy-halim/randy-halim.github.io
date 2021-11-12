@@ -20,6 +20,8 @@ ps. this site is currently a big work in progress. things should be looking bett
 
 {{ post.excerpt }}
 
------
+[{{ post.read_more }}]({{ post.url | relative_url }})
+
+---
 
 {% endfor %}
