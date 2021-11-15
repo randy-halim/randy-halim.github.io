@@ -5,3 +5,6 @@ main:
   - name: about
     url: "/about"
     weight: 2
+  - name: omniciv
+    url: "/omniciv.html"
+    weight: 3
