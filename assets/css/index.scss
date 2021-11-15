@@ -26,6 +26,12 @@ hr {
   background: $Sea-Foam-5;
 }
 
+code {
+  background-color: $Sea-Foam-4;
+  border-radius: 0.25em;
+  padding: 0 0.25em;
+}
+
 body {
   font-family: "Crimson Text", serif;
   font-size: 18px;
@@ -61,5 +67,10 @@ a:visited {
     color: #3b3b3b;
     border-radius: 5px;
     padding: 1em;
+
+    a,
+    a:visited {
+      color: $Sea-Foam-4;
+    }
   }
 }
