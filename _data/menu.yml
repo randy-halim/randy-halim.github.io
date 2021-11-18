@@ -2,9 +2,12 @@ main:
   - name: home
     url: "/"
     weight: 1
+  - name: one day
+    url: "/one-day"
+    weight: 2
   - name: about
     url: "/about"
-    weight: 2
+    weight: 3
   - name: omniciv
     url: "/omniciv.html"
-    weight: 3
+    weight: 4
