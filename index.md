@@ -1,18 +1,8 @@
-welcome! we got many things, like
+# welcome! 👋
 
-- blog posts
-- projects
-- material for classes (iykyk)
-- `the v o i d`
-- and more!
+I do several things, some of which are Computer Science & Cybersecurity related.
 
-so don't be shy and stay a while!
-
-— randy✨
-
-ps. this site is currently a big work in progress. things should be looking better soon ✨
-
-# recent blog posts
+<!-- # recent blog posts
 
 {% for post in site.posts %}
 
@@ -24,4 +14,4 @@ ps. this site is currently a big work in progress. things should be looking bett
 
 ---
 
-{% endfor %}
+{% endfor %} -->
