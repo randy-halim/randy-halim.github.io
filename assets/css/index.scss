@@ -1,15 +1,23 @@
 ---
 ---
 
-@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Vollkorn&display=swap');
 
-/* Color Theme Swatches in Hex */
-$Sea-Foam-1: #00ba9e;
-$Sea-Foam-2: #007a68;
-$Sea-Foam-3: #00fad4;
-$Sea-Foam-4: #003b32;
-$Sea-Foam-5: #00e0bf;
+$Font-Headings: 'Vollkorn', serif;
+$Font-Body: 'Poppins', sans-serif;
+
+$Color-Text: #3b3b3b;
+$Color-Text-Lighter: #6666FF;
+
+html {
+  font-family: $Font-Body;
+}
+
+code {
+  background-color: #F1F1F1;
+  padding: 0 0.2em;
+  border-radius: 0.25em;
+}
 
 h1,
 h2,
@@ -17,71 +25,55 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Syne Mono", monospace;
+  font-family: $Font-Headings;
+  color: $Color-Text;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background: $Sea-Foam-5;
+h1 {
+  font-size: 48px;
 }
 
-code {
-  background-color: $Sea-Foam-5;
-  border-radius: 0.25em;
-  padding: 0 0.25em;
-  color: #3b3b3b;
+.site-heading {
+  font-size: 26px;
 }
 
-body {
-  font-family: "Crimson Text", serif;
-  font-size: 18px;
-  background-color: $Sea-Foam-4;
-  color: #ffffff;
+p, a {
+  font-size: 20px;
 }
 
-a,
-a:visited {
-  color: $Sea-Foam-1;
+.centered {
+  text-align: center;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 3em;
-
-  @media screen and (max-width: 800px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-row-gap: 3em;
-  }
+.spacer {
+  height: 1em;
 }
 
-.sidebar {
-  ul {
-    list-style-type: none;
-  }
+.content {
+  margin: 0 3em;
+}
 
-  .footer {
-    background-color: $Sea-Foam-5;
-    color: #3b3b3b;
-    border-radius: 5px;
-    padding: 1em;
-    font-size: small;
+.menu {
+  & > a, p {
+    text-decoration: none;
+    background-image: linear-gradient(to right, $Color-Text-Lighter, $Color-Text-Lighter);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 5% 2px;
+    transition: all .5s ease;
+    color: $Color-Text;
+    padding: 0 0.05em;
+    display: block;
 
-    a,
-    a:visited {
-      color: $Sea-Foam-4;
+    &:hover {
+      background-size: 100% 100%;
+      color: #FFFFFF;
     }
-  }
-}
 
-.this-5999 {
-  opacity: 0;
-  transition: all 1s ease-in-out;
-
-  &:hover {
-    opacity: 1;
+    @media only screen and (min-width: 600px) {
+      background-size: 25% 2px;
+      display: inline-block;
+      margin: 0 0.5em;
+    }
   }
 }
