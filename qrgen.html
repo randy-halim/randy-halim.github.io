@@ -1,0 +1,24 @@
+---
+layout: default
+title: qr code generator
+---
+<div class="centered">
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div>
+        <canvas id="qr-code"></canvas>
+    </div>
+    <div class="spacer"></div>
+
+    <input type="text" placeholder="Enter anything..." id="ipt-value" value="https://fcrh.me" />
+    <button id="btn-download">Download</button>
+    <br/> <br/>
+    <label for="ipt-transparent">Check to make transparent: </label>
+    <input type="checkbox" id="ipt-transparent" />
+    <p>
+        (Downloads as a 500x500 png)
+    </p>
+
+    <script src="assets/js/qrious.min.js"></script>
+    <script src="assets/js/qr-code.js"></script>
+</div>
